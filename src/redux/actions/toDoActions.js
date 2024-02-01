@@ -15,4 +15,24 @@ export const deleteTodo = (delete_id) => {
     })
 }
 
-// updateTodo
+export const updateTodo = (update_id,updated_title ) => {
+     return({
+            type: UPDATE_TODO, 
+            payload : { update_id:update_id, updated_title:updated_title}
+     })
+}
+
+// todoArray = [
+//     {
+//         id: 1,
+//         title: "First To-Do"
+//     },
+//     {
+//         id: 2,
+//         title: "Second To-Do"
+//     },
+//     {
+//         id: 3,
+//         title: "Third To-Do"
+//     }
+// ]
